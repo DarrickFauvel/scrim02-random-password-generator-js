@@ -1,0 +1,79 @@
+@use '../abstracts' as *;
+
+.app {
+  background-color: $clr-bg-app;
+  color: $white;
+  border-radius: 0.5em;
+  padding: calc((50 / 16) * 1em);
+  padding-top: calc((120 / 16) * 1em);
+}
+
+.header {
+  display: grid;
+  gap: 1em;
+}
+
+.headline {
+  font-family: $ff-display;
+  font-size: 4rem;
+  line-height: calc(40 / 40);
+}
+
+.headline span {
+  display: block;
+  color: $emerald;
+}
+
+.subhead {
+  color: $light-grey;
+  font-size: 2rem;
+  line-height: calc(28 / 20);
+}
+
+.button {
+  display: inline-block;
+
+  width: max-content;
+
+  text-decoration: none;
+  color: $white;
+  background-color: $mountain-meadow;
+  border-radius: calc((6 / 16) * 1em);
+  padding-inline: calc((17 / 16) * 1em);
+  padding-block: calc((9 / 16) * 1em);
+  margin-top: calc((35 / 16) * 1em);
+  margin-bottom: calc((16 / 16) * 1em);
+}
+
+.button__content {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.passwords {
+  list-style-type: none;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: calc((24 / 16) * 1em);
+
+  border-top: 1px solid #2f3e53;
+  padding-top: calc((35 / 16) * 1em);
+  margin-top: calc((35 / 16) * 1em);
+}
+
+.password {
+  color: $medium-spring-green;
+  background-color: $prussian-blue;
+  border-radius: calc((6 / 16) * 1em);
+  padding-inline: calc((17 / 16) * 1em);
+  padding-block: calc((9 / 16) * 1em);
+
+  display: grid;
+  place-content: center;
+  flex-basis: 45%;
+  min-height: calc((40 / 16) * 1em);
+}
